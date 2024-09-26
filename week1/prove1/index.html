@@ -1,38 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <src="styles.css"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> BYUI Mission Statement</title>
-    <link rel="stylesheet" href="styles.css"/>
+    <title>BYUI Mission Statement</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="prove1.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=News+Cycle:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=News+Cycle:wght@400;700&display=swap" rel="stylesheet">
+    <script src="prove1.js" defer></script>
 </head>
 <body>
     <header>
-    <h1>MISSION STATEMENT</h1>
-    <h4> BRIGHAM YOUNG UNIVERSITY-IDAHO</h4>
+        <select name="mode" id="mode-selector" onchange="changeTheme()">
+            <option value="light">Light</option>
+            <option value="dark">Dark</option>
+        </select>
+        <h1>MISSION STATEMENT</h1>
+        <h4>BRIGHAM YOUNG UNIVERSITY-IDAHO</h4>
     </header>
+    
     <main>
-    <p id="large">Brigham Young University-Idaho was founded and is supported and guided by The Church of Jesus Christ of Latter-day Saints. Its mission is to develop disciples of Jesus Christ who are leaders in their homes, the Church, and their communities.</p>
+        <p id="large">Brigham Young University-Idaho was founded and is supported and guided by The Church of Jesus Christ of Latter-day Saints. Its mission is to develop disciples of Jesus Christ who are leaders in their homes, the Church, and their communities.</p>
 
         <p id="small">The university does this by:</p>
         <ol class="does-list">
             <li>Building testimonies of the restored gospel of Jesus Christ and fostering its principles in a wholesome academic, cultural, and social environment.</li>
-
-            <li>Providing a high-quality education that prepares students of diverse interests and abilities for lifelong learning and employment. </li>
-
+            <li>Providing a high-quality education that prepares students of diverse interests and abilities for lifelong learning and employment.</li>
             <li>Serving as many students as possible within resource constraints.</li>
-
-            <li> Delivering education that is affordable for students and the Church.</li>
+            <li>Delivering education that is affordable for students and the Church.</li>
         </ol>
+      
     </main>
-    <footer>
-        <img src="byui-logo_blue.webp" alt="BYUI Logo" class="center">
-    </footer>
     
-       
+    <footer>
+        <img id="light-image" src="byui-logo_blue.webp" alt="BYUI Logo" class="center">
+        <img id="dark-mode-img" src="byui-logo_white.png" alt="BYUI Dark Logo" class="center" style="display: none;">
+    </footer>
 </body>
 </html>
