@@ -28,10 +28,9 @@ section{
 }
 
 .menu-expanded {
-    margin-top: 50px; /* Adjust the value based on the menu's height */
+    margin-top: 50px; 
+
 }
-
-
 img {
     margin: 8px;
     max-width: 100%;
@@ -57,22 +56,21 @@ nav {
  
 }
 nav a {
-    font-size: 1.2rem; /* Change the font size here */
-    color: white; /* Change the color of the links */
-    text-decoration: none; /* Remove the underline from links */
-    padding: 10px 15px; /* Add padding for spacing */
+    font-size: 1.2rem; 
+    color: white; 
+    text-decoration: none; 
+    padding: 10px 15px; 
 }
 
 nav a:hover {
-    color: #ddd; /* Change color on hover */
-    background-color: #555; /* Background color on hover */
-    border-radius: 2px; /* Optional: rounded corners on hover */
+    color: #333; 
+    border-radius: 2px; 
 }
 
 
 #menuToggle {
     width:100%;
-    display: none; /* Hide button by default */
+    display: none; 
     background: none;
     border: none;
     font-size: 1.5rem;
@@ -93,9 +91,9 @@ nav a:hover {
 }
 
 #menuItems ul{
-    list-style-type: none; /* Remove bullet points */
-    padding: 0; /* Remove default padding */
-    margin: 0; /* Remove default margin */
+    list-style-type: none; 
+    padding: 0; 
+    margin: 0; 
     display: flex;
     flex-direction:column;
     align-items: center; 
@@ -103,7 +101,7 @@ nav a:hover {
 }
 
 #menuToggle {
-    display: inline; /* Show the toggle button on small screens */
+    display: inline; 
     color:white;
      align-items: center;
     
