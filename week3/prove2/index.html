@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <link href="coolpics.css" rel="stylesheet">
+    <script src="coolpics.js" defer></script>
+
+</head>
+
+<body>
+    <header>
+        <h1> Cool Pics</h1>
+        <nav>
+            <button id="menuToggle">☰ Menu</button>
+            <section id="menuItems">
+                <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">People</a></li>
+                <li><a href="#">Places</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                </ul>
+            </section>
+        </nav>
+    </header>
+    <main>
+        <style>
+            @media (min-width: 700px) {
+                header {
+                    max-width: 100%;
+                    margin: 0 auto;
+                    padding: 1rem;
+                }
+
+                main {
+                    max-width: 100%;
+                    background-color: rgb(235, 230, 230);
+                    text-align: center
+                }
+
+                figure {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    grid-template-rows: auto;
+                    grid-gap: 1rem;
+                    
+
+                }
+
+                footer {
+                    max-width: 100%;
+                    margin: 0 auto;
+                }
+
+                #menuItems ul{
+                    align-items: center;
+                }
+            }
+
+            @media (min-width: 1000px) {
+                header {
+                    max-width: 100%;
+                    margin: 0 auto;
+                    padding: 1rem;
+                }
+
+                main {
+                    max-width: 100%;
+                    /* Make main fill the full height of the viewport */
+                    background-color: rgb(235, 230, 230);
+                }
+
+                figure {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr 1fr;
+                    grid-template-rows: auto;
+                    grid-gap: 1rem;
+                    justify-items: center;
+                }
+
+                footer {
+                    max-width: 100%;
+                    margin: 0 auto;
+                }
+
+                #menuToggle {
+                    display: none;
+                    /* Hide the toggle button on large screens */
+                }
+
+                #menuItems{
+                    display: flex;
+                }
+
+                #menuItems ul{
+                    flex-direction:row;
+                    justify-content:center;
+                    /* Show the menu items on large screens */
+                }
+
+                #menuItems ul li{
+                    margin: 0 10px;
+                }
+                
+            }
+        </style>
+        <section>
+            <h2> Current Work </h2>
+            <figure>
+                <img src="norris-sm.jpeg" alt="picture">
+                <img src="norris-sm.jpeg" alt="picture">
+                <img src="norris-sm.jpeg" alt="picture">
+                <img src="norris-sm.jpeg" alt="picture">
+                <img src="norris-sm.jpeg" alt="picture">
+                <img src="norris-sm.jpeg" alt="picture">
+                <img src="norris-sm.jpeg" alt="picture">
+                <img src="norris-sm.jpeg" alt="picture">
+                <img src="norris-sm.jpeg" alt="picture">
+            </figure>
+        </section>
+    </main>
+    <footer>
+        <p> ©2023 Not a real site 😀</p>
+    </footer>
+</body>
+
+</html>

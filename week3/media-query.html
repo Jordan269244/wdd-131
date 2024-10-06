@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <link href="media-query.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>Media Query Example</h1>
+    </header>
+    <main>
+        <style>
+            @media (min-width: 500px) {
+                header {
+                    color: white;
+                    background-color: black;
+                }
+
+                main {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    grid-template-rows: auto;
+                    grid-gap: 1rem;
+                }
+
+                .scripture1 {
+                    grid-column: 1;
+                }
+
+                .scripture2 {
+                    grid-column: 2;
+                }
+            }
+        </style>
+
+        <div class=scripture1>
+            <h2>D&C 6:36</h2>
+            <p>Look unto God in every thought. Doubt not, Fear not.</p>
+        </div>
+        <div class=scripture2>
+            <h2>Mark 5:36</h2>
+            <p>As soon as Jesus heard the word that was spoken, he saith unto the ruler of the synagogue, Be not
+                afraid, only Believe.</p>
+        </div>
+
+    </main>
+    <footer>
+        <p>Jordan Wilson</p>
+    </footer>
+
+</body>
+
+</html>
