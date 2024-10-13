@@ -109,34 +109,37 @@ nav a:hover {
 }
 
 .viewer {
+    display: none;
     position: fixed;
     top: 0;
     left: 0;
     bottom: 0;
     right: 0;
     background: rgba(0, 0, 0, 0.75);
-    display: grid;
-    grid-template-rows: auto 1fr;
     align-items: center;
     justify-items: center;
-    z-index: 10;
     color: white;
+    z-index:10;
+}
+.viewer.show {
+    display: flex; /* Display the viewer when the .show class is added */
 }
 
 .viewer img {
-    max-height: 100%;
-    max-width: 100%;
+    margin-left:6.5rem;
+    max-height: 120%;
+    max-width: 120%;
     border: 5px solid white;
 }
 
 .close-viewer {
+    position: absolute;
+    top: 10px;
+    right: 10px; /* Move it to the right side */
     background: none;
     border: none;
     color: white;
     font-size: 2rem;
     cursor: pointer;
-    align-self: start;
-    justify-self: end;
-    padding: 0.5rem;
     z-index: 11;
 }
