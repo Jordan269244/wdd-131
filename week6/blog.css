@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height:1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color:#473144;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color:#473144;
+}
+
+a {
+    color: #af1b3f;
+    text-decoration: none;
+}
+
+header {
+    background-color: #ffff;
+    padding: 10px 20px;
+    text-align: center;
+    border-bottom: 2px solid #ddd;
+
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    font-weight: bold;
+}
+
+.page {
+    display: flex;
+    justify-content: space-between;
+    margin: 20pc auto;
+    padding: 10px;
+    width: 80%;
+    border-top: 1px solid #ddd;
+
+}
+
+.book-info {
+    width: 15%;
+    padding: 10px;
+    font-size: 0.9rem;
+    color: #473144;
+}
+
+.book-review {
+    width: 65%;
+    padding: 10px;
+
+}
+
+.book-review h2 {
+    font-size: 1.8rem;
+    color: #af1b3f;
+
+}
+
+.book-review img {
+    width: 150px;
+    height: auto;
+    margin-top: 10px;
+}
+
+.book-review p {
+    margin-top: 10px;
+}
+
+.filters {
+    width: 15%;
+    padding: 10px;
+    text-align: right;
+    color: #666;
+
+}
