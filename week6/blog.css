@@ -1,17 +1,23 @@
+
+
+
 body {
     font-family: Arial, sans-serif;
     line-height:1.6;
     margin: 0;
-    padding: 0;
+    padding:0;
     background-color: #f9f9f9;
     color:#473144;
+    overflow-x:hidden;
+   
 }
 
 h1 {
+
     font-size: 2.5rem;
     color:#473144;
-    padding: 20px;
-    border-bottom: 2px solid #efc69B;
+    padding: 10px;
+    width:100%;
 }
 
 a {
@@ -23,15 +29,17 @@ header {
     background-color: #ffff;
     padding: 10px 20px;
     text-align: center;
-    border-top: 2px solid #efc69B;
     
 
 }
 
 nav ul {
     list-style: none;
-    padding: 0;
+    padding: 10px;
     text-align:right; 
+    width:100%;
+    border-top: 2px solid #efc69B;
+    border-bottom: 2px solid #efc69B;
 
 }
 
@@ -44,45 +52,59 @@ nav ul li a {
     font-weight: bold;
 }
 
-.page {
+/*THIS IS WHERE THINGS NEED TO CHANGE*/
+
+.article {
     display: grid;
-    grid-template-columns: 20% 60% 20%; /* Three columns: 20%, 60%, 20% */
-    gap: 10px; /* Adds space between the columns */
-    width: 90%;
+    grid-template-columns: 1fr 3fr 1fr; /* Three columns: 20%, 60%, 20% */
+    gap:5px;   /* Adds space between the columns */
+    width: 100%;
     margin: 0 auto; /* Center the content */
-    border-top: 2px solid #efc69b;
+    box-sizing:border-box;
+
 }
 
 .book-info {
+    text-align: right;
     padding: 10px;
     font-weight: bold;
     font-size: 0.9rem;
     color: #473144;
+    border-right: 2px solid #efc69B;
+
 }
 
 .book-review {
-    padding: 10px;
+
+    padding: 20px;
     text-align: left;
+
 }
 
 .book-review h2 {
+    text-align:center;
     font-size: 1.8rem;
     color: #af1b3f;
 
 }
 
 .book-review img {
+    display:block;
     width: 150px;
     height: auto;
-    margin-top: 10px;
+    margin: 0 auto;
+    
 }
 
 .book-review p {
     margin-top: 10px;
+    text-align:center;
+    color: #473144;
 }
 
 .filters {
-    padding: 10px;
+    
     text-align: right;
     color: #666;
+
 }
