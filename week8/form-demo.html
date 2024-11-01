@@ -17,7 +17,7 @@
         <input type="text" id="email" name="email" required><br>
 
         <label for="address">Address:</label><br>
-        <input type="text" id="address" name="email" required><br>
+        <input type="text" id="address" name="address" required><br>
 
         <label for="payment">Payment Method:</label><br>
         <select id="payment" name="payment" required>
@@ -26,10 +26,10 @@
             <option value="paypal">PayPal</option>
         </select><br>
 
-        <label for="card">Credit Card Number:</label><br>
-        <input type="text" id="card" name="card" pattern="[0-9]{16}".hide placeholder="Enter 16 Digits" required><br>
+        <label for="card" class="hide">Credit Card Number:</label><br>
+        <input type="text" id="card" name="card" pattern="[0-9]{16}" placeholder="Enter 16 Digits" required><br>
         
-        <label for="paypal">PayPal Username:</label><br>
+        <label for="paypal" class="hide">PayPal Username:</label><br>
         <input type="text" id="paypal" name="paypal" placeholder="Enter PayPal username" required><br>
 
         <input type="submit" value="Submit" id="submit"><br>
