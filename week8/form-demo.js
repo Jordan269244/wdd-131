@@ -2,8 +2,8 @@ document.addEventListener("DOMContentLoaded", () => {
   const paymentSelect = document.getElementById("payment");
   const cardLabel = document.querySelector("label[for='card']");
   const cardInput = document.getElementById("card");
-  const paypalLabel = document.querySelector("label[for='paypal']");
-  const paypalInput = document.getElementById("paypal");
+  const paypalLabel = document.querySelector("label[for='paypaluser']");
+  const paypalInput = document.getElementById("paypaluser");
 
   // Hide both labels and fields initially
   cardLabel.classList.add("hide");
@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
           cardInput.classList.remove("hide"); // Show Credit Card input
           paypalLabel.classList.add("hide");   // Hide PayPal label
           paypalInput.classList.add("hide");   // Hide PayPal input
-      } else if (paymentSelect.value === "paypal") {
+      } else if (paymentSelect.value === "paypaluser") {
           paypalLabel.classList.remove("hide"); // Show PayPal label
           paypalInput.classList.remove("hide"); // Show PayPal input
           cardLabel.classList.add("hide");      // Hide Credit Card label

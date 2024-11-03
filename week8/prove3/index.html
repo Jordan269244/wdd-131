@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="credit_card.css" />
+    <script src="form-demo.js" defer></script>
+</head>
+
+<body>
+    <form>
+        <div id="front_card">
+
+            <label for="name">CARD HOLDER</label>
+            <input type="text" id="name" name="name" required>
+
+            <div class="card-details">
+                <div>
+                    <label for="number">CARD NUMBER</label>
+                    <input type="text" id="number" name="number" required>
+                </div>
+                <div>
+                    <label for="month">EXPIRATION</label>
+                    <input type="text" id="month" name="month" placeholder="MM" required>
+                </div>
+                <div>
+                    <label>&nbsp;</label>
+                    <input type="text" id="year" name="year" placeholder="YY" required>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="back_card">
+            <label for="cvc">CVC/CVV</label>
+            <input type="text" id="cvc" name="cvc" placeholder="xxx" required>
+        </div>
+
+        <input type="submit" value="Submit" id="submit">
+    </form>
+</body>
+
+</html>

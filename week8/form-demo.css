@@ -21,35 +21,35 @@ form {
 label[for="name"] {
   display: block;
   text-align: left;
-  margin-left: 140px;
+  margin-left: 300px;
   font-weight: bold;
 }
 
 label[for="email"] {
   display: block;
   text-align: left;
-  margin-left: 140px;
+  margin-left: 300px;
   font-weight: bold;
 }
 
 label[for="address"] {
   display: block;
   text-align: left;
-  margin-left: 140px;
+  margin-left: 300px;
   font-weight: bold;
 }
 
 label[for="payment"] {
   display: block;
   text-align: left;
-  margin-left: 140px;
+  margin-left: 300px;
   font-weight: bold;
 }
 
 label[for="card"] {
   display: block;
   text-align: left;
-  margin-left: 140px;
+  margin-left: 300px;
   font-weight: bold;
 }
 
@@ -94,7 +94,7 @@ input {
   width: 80px;
   background-color: lightgreen;
   text-align: center;
-  margin-left: 140px;
+  margin-left: 290px;
 
 }
 
