@@ -10,7 +10,7 @@ body {
 
 /* Form styling */
 form {
-    width: 330px;
+    width: 300px;
     position: relative;
 }
 
@@ -58,6 +58,15 @@ input[type="text"] {
     box-sizing: border-box;
 }
 
+.topcard{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+img{
+    display:block;
+    text-align:right;
+}
 /* Card details grid for aligning number, month, and year in the same row */
 .card-details {
     display: grid;
