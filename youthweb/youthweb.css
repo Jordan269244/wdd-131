@@ -1,0 +1,193 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh; /* Ensure body grows with content */
+    background-color: cornsilk;
+    overflow: auto; /* Enable scrolling */
+}
+
+
+/* TITLE PAGE */
+/*****************************************************************/
+.logo-container {
+    margin-top:80px;
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+
+.circle-logo {
+    height:150px;
+    width:150px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.line-container {
+    position: absolute;
+    width: 100%;
+    height: 120px;
+    background-color: #587D71;
+    z-index: 0;
+}
+
+.line-container::before, .line-container::after {
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 100px;
+    background-color: transparent;
+    border-top: 30px solid #587D71;
+    border-radius: 0 0 100px 100px;
+}
+
+.line-container::before {
+    left: 0;
+    
+}
+
+.line-container::after {
+    right: 0;
+    transform: rotateY(180deg);
+}
+
+.page-title {
+    position: absolute;
+    text-align:center;
+    margin-top: 70px;  /* Absolute positioning to overlap the yellow line */
+    left: 42%;  /* Centers horizontally */
+    font-size: 24px;
+    color: black;
+    background-color: transparent;  /* Ensure no background for title */
+    padding: 6px;
+    
+}
+
+.nav {
+
+    margin-top:150px;
+    text-align:center;
+    font-size: 20px;
+
+}
+.nav a{
+    padding: 20px;
+    color:black;
+    text-decoration: none;
+}
+
+.full-width-line {
+    width: 100%;         
+    height: 2px;  
+    background-color:cornsilk; 
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    position: absolute;  
+    top: 39%;            
+    left: 0;            
+    z-index: 0;          
+}
+
+/***************************************************************/
+
+/* Box Background */
+#box {
+    height: 340px;
+    width: 750px;
+    display: flex;
+    background-color: #F58F29;
+    z-index: 0; 
+    position: absolute; 
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top:315px;
+}
+
+/* Image from Google Sheets */
+.imported-image {
+    max-width: 300px;
+    height: auto;
+    position: relative;
+    z-index: 1; /* Image stays above the box */
+}
+
+/* Styling for Data Container Div */
+#data-container div {
+    margin-top: 20px;
+    position: relative; /* So we can stack images and text relative to this container */
+}
+
+/* Targeting Image in Row 0 and Image 0 */
+img[data-row="0"][data-img="0"] {
+    display: flex;
+    margin-top: 80px;
+    margin-right: 400px;
+    z-index: 2; /* Image above the box */
+}
+
+/* Text from Google Sheets */
+.row-0 .text-from-sheet {
+    position: absolute;
+    display: flex;
+    font-size: 30px;
+    color: black;
+    margin-left: 400px;
+    z-index: 2; /* Text stays above the box */
+     /* Vertically center text */
+    transform: translateY(-50%); /* Adjust text positioning */
+}
+
+.row-1 .text-from-sheet {
+    position: absolute;
+    display:flex;
+    font-size:26px;
+    width:300px;
+    margin-left:370px;
+    text-align:center;
+    margin-bottom:400px;
+    z-index:2;
+    transform: translateY(-250%);
+}
+
+#box2 {
+    height: 100px;
+    width: 750px;
+    display: flex;
+    background-color: #011936;
+    z-index: 0; 
+    position: absolute; 
+    height: 100px;
+    width: 750px;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top:670px;
+}
+
+.event-title p {
+    position:absolute
+}
+
+footer{
+    height: 500px;
+}
+
+
+
+
+
+/* Example: Style the first image of the first row 
+.imported-image-0-2 {
+    border: 2px solid red;
+}
+
+/* Example: Style the second image of the second row 
+.imported-image-1-1 {
+    border: 2px solid blue;
+}*/
