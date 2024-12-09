@@ -1,3 +1,8 @@
+* {
+    box-sizing: border-box;
+}
+
+
 body {
     margin: 0;
     padding: 0;
@@ -5,8 +10,8 @@ body {
     flex-direction: column;
     align-items: center;
     min-height: 100vh; /* Ensure body grows with content */
-    background-color: cornsilk;
-    overflow: auto; /* Enable scrolling */
+    background-color: rgb(251, 247, 233);
+    overflow-x: hidden; /* Enable scrolling */
 }
 
 
@@ -20,6 +25,7 @@ body {
 }
 
 .circle-logo {
+    border: 5px solid #587D71;
     height:150px;
     width:150px;
     border-radius: 50%;
@@ -70,7 +76,7 @@ body {
 }
 
 .nav {
-
+    
     margin-top:150px;
     text-align:center;
     font-size: 20px;
@@ -85,7 +91,7 @@ body {
 .full-width-line {
     width: 100%;         
     height: 2px;  
-    background-color:cornsilk; 
+    background-color:rgb(251, 247, 233); 
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
     position: absolute;  
     top: 39%;            
@@ -96,17 +102,34 @@ body {
 /***************************************************************/
 
 /* Box Background */
+
+.containers {
+    display:flex;
+    position: absolute;
+    z-index: 0;
+    left:50%;
+    
+}
+
+
 #box {
-    height: 340px;
+    height: 335px;
     width: 750px;
-    display: flex;
-    background-color: #F58F29;
-    z-index: 0; 
-    position: absolute; 
+    background-color: #F58F29; 
     top: 0;
-    left: 50%;
     transform: translateX(-50%);
     margin-top:315px;
+    
+}
+
+#box2 {
+    
+    background-color: #011936;
+    height: 600px;
+    width: 750px;
+    top: 0;
+    transform: translateX(-150%);
+    margin-top:670px;
 }
 
 /* Image from Google Sheets */
@@ -122,7 +145,7 @@ body {
     margin-top: 20px;
     position: relative; /* So we can stack images and text relative to this container */
 }
-
+/*****************************************************************************/
 /* Targeting Image in Row 0 and Image 0 */
 img[data-row="0"][data-img="0"] {
     display: flex;
@@ -131,6 +154,23 @@ img[data-row="0"][data-img="0"] {
     z-index: 2; /* Image above the box */
 }
 
+img[data-row="2"][data-img="0"] {
+    display: flex;
+    height:270px;
+    width: auto;
+    margin-top:200px;
+    z-index:2;
+}
+
+img[data-row="4"][data-img="0"] {
+    display: flex;
+    height:270px;
+    width: auto;
+    transform: translateY(-107%);
+    z-index:2;
+    margin-left: 250px;
+}
+/*************************************************************************/
 /* Text from Google Sheets */
 .row-0 .text-from-sheet {
     position: absolute;
@@ -155,39 +195,27 @@ img[data-row="0"][data-img="0"] {
     transform: translateY(-250%);
 }
 
-#box2 {
-    height: 100px;
-    width: 750px;
-    display: flex;
-    background-color: #011936;
-    z-index: 0; 
-    position: absolute; 
-    height: 100px;
-    width: 750px;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    margin-top:670px;
-}
+
+
 
 .event-title p {
-    position:absolute
+    position:absolute;
+    display:flex;
+    color:white;
+    font-size:40px;
+    left:40%;
+    z-index: 3;
+    justify-content: center;
+    transform: translateY(900%);
+    
+
 }
 
 footer{
-    height: 500px;
+    height:50px;
 }
 
 
 
 
 
-/* Example: Style the first image of the first row 
-.imported-image-0-2 {
-    border: 2px solid red;
-}
-
-/* Example: Style the second image of the second row 
-.imported-image-1-1 {
-    border: 2px solid blue;
-}*/
