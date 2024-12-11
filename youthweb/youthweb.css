@@ -125,7 +125,7 @@ body {
 #box2 {
     
     background-color: #011936;
-    height: 600px;
+    height: 550px;
     width: 750px;
     top: 0;
     transform: translateX(-150%);
@@ -137,6 +137,8 @@ body {
     max-width: 300px;
     height: auto;
     position: relative;
+    display:flex;
+    justify-content:space-between;
     z-index: 1; /* Image stays above the box */
 }
 
@@ -157,19 +159,69 @@ img[data-row="0"][data-img="0"] {
 img[data-row="2"][data-img="0"] {
     display: flex;
     height:270px;
-    width: auto;
-    margin-top:200px;
+    width: 200px;
+    transform:translateY(50%);
     z-index:2;
 }
 
 img[data-row="4"][data-img="0"] {
     display: flex;
     height:270px;
-    width: auto;
-    transform: translateY(-107%);
+    width: 200px;
+    transform:translateY(-57%);
     z-index:2;
     margin-left: 250px;
 }
+
+img[data-row="6"][data-img="0"] {
+    display: flex;
+    height:270px;
+    width: 200px;
+    transform:translateY(-164%);
+    z-index:2;
+    margin-left: 500px;
+}
+
+
+/**********************TEXT FOR IMAGES******************************/
+.row-2 .text-from-sheet {
+    position:absolute;
+    display: flex;
+    color:white;
+    z-index:2;
+    transform: translateY(1200%);
+    margin-left:40px;
+    width:120px;
+    text-align:center;
+    
+}
+
+.row-4 .text-from-sheet {
+    position:absolute;
+    display: flex;
+    color:white;
+    z-index:2;
+    transform: translateY(409%);
+    margin-left:285px;
+    width:120px;
+    text-align:center;
+}
+
+.row-6 .text-from-sheet {
+    position:absolute;
+    display: flex;
+    color:white;
+    z-index:2;
+    transform: translateY(-380%);
+    margin-left:540px;
+    width:120px;
+    text-align:center;
+}
+
+
+
+
+
 /*************************************************************************/
 /* Text from Google Sheets */
 .row-0 .text-from-sheet {
@@ -195,9 +247,6 @@ img[data-row="4"][data-img="0"] {
     transform: translateY(-250%);
 }
 
-
-
-
 .event-title p {
     position:absolute;
     display:flex;
@@ -211,10 +260,110 @@ img[data-row="4"][data-img="0"] {
 
 }
 
-footer{
-    height:50px;
+/***************Instagram Link*************************/
+
+.insta{
+    display:block;
+    text-align:center;
+    justify-content:end;
+    transform: translateY(-90%);
+
+}
+h2{
+    font-size:40px;
 }
 
+.instagram-logo{
+    border-radius:50%;
+    height:120px;
+}
+
+.instagram-logo:hover{
+    opacity:0.7;
+}
+
+/*************** Images ******************************/
+
+.group-images{
+    transform: translateY(-60%);
+    text-align:center;
+    margin-bottom:70px;
+    background-color:#011936;
+    padding:3px;
+
+    border-radius:20px;
+}
+
+.group-images img{
+    padding:1px;
+    height:200px;
+    width:auto;
+    border-radius:15px;
+}
+
+/*************** Footer ******************************/
+footer {
+    position: relative;
+    width: 100%;
+}
+
+.bottom-line {
+    position: absolute;
+    bottom: 0;
+    width: 80%;
+    height: 250px;
+    background-color: #587D71;
+    z-index: 0;
+    margin-left:148px;
+}
+
+footer p{
+    color:white;
+    position:relative;
+    width:300px;
+    margin-left:200px;
+    transform: translateY(-10%);
+    z-index: 1;
+    justify-content:end;
+}
+
+#button {
+    color:rgb(255, 255, 255);
+    position:relative;
+    margin:0 auto;
+    text-align:center;
+    transform: translateY(-150%);
+    background-color: #7c9c92;
+    padding:10px;
+    width:200px;
+    border-radius:30px;
+    
+}
+
+a {
+    text-decoration:none;
+}
+
+.full-width-line2 {
+    position:relative;
+    z-index: 1;
+    border: none;
+    border-top: 4px solid #7c9c92; /* Line color and thickness */
+    margin: 20px auto; /* Center the line */
+    width: 80%; /* Adjust the width */
+    transform: translateY(-1000%);
+}
+
+.credit{
+
+    position:relative;
+    display:flex;
+    justify-content:space-between;
+    transform: translateY(-10%);
+}
+#copyright{
+    margin-right:100px;
+}
 
 
 

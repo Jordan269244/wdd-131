@@ -7,3 +7,14 @@ https://docs.google.com/spreadsheets/d/e/2PACX-1vRCg_5nRSq8BiuH2klRLHVP_uJZjS5ow
 
 FIRST IMAGE:https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStIEErk71K5kAupTbnJist2XxlXlKkWQTvGA&s
 SECOND IMAGE:https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9S2i-cP9CZA_UFNQOGq0Q-O5FMWaec7wzaw&s
+
+
+
+ <div class="group-images">
+        <img src="images/group pic.jpg" alt="photo">
+        <img src="images/groupfun.jpg" alt="photo">
+        <img src="images/youthdance.jpg" alt="photo">
+    </div>
+
+
+  
