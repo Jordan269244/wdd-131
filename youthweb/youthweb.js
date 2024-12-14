@@ -1,3 +1,4 @@
+//Link to Google Sheet, You can view it the permissions are on
 const SHEET_CSV_URL = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vRCg_5nRSq8BiuH2klRLHVP_uJZjS5owEX68KVj7xHXLohCkXxvhwhSzC9vUbAJOFbRfWz4h26s6GbP/pub?output=csv';
 
 //Load everything so it is in the correct place, then appear
