@@ -1,6 +1,16 @@
 const SHEET_CSV_URL = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vRCg_5nRSq8BiuH2klRLHVP_uJZjS5owEX68KVj7xHXLohCkXxvhwhSzC9vUbAJOFbRfWz4h26s6GbP/pub?output=csv';
 
-// Fetch and parse CSV data
+//Load everything so it is in the correct place, then appear
+document.body.classList.add('loading');
+
+window.addEventListener('load', () => {
+    document.body.classList.remove('loading');
+    document.body.classList.add('loaded');
+});
+
+
+
+//Fetch and parse CSV data
 const fetchCSVData = async () => {
     try {
         const response = await fetch(SHEET_CSV_URL);
@@ -87,3 +97,6 @@ const renderData = (rows) => {
 
 // Fetch and display the data
 fetchCSVData();
+
+
+

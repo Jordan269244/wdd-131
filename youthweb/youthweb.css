@@ -12,6 +12,15 @@ body {
     min-height: 100vh; /* Ensure body grows with content */
     background-color: rgb(251, 247, 233);
     overflow-x: hidden; /* Enable scrolling */
+
+}
+
+body.loading * {
+    visibility: hidden; /* Hide all elements during loading */
+}
+body.loaded * {
+    visibility: visible; /* Show elements after loading */
+    
 }
 
 
@@ -72,11 +81,12 @@ body {
     color: black;
     background-color: transparent;  /* Ensure no background for title */
     padding: 6px;
+    font-family:"Gowun Dodum";
     
 }
 
 .nav {
-    
+    font-family:"Didact Gothic";
     margin-top:150px;
     text-align:center;
     font-size: 20px;
@@ -185,15 +195,16 @@ img[data-row="6"][data-img="0"] {
 
 /**********************TEXT FOR IMAGES******************************/
 .row-2 .text-from-sheet {
+
     position:absolute;
     display: flex;
     color:white;
     z-index:2;
-    transform: translateY(1200%);
+    transform: translateY(1050%);
     margin-left:40px;
     width:120px;
     text-align:center;
-    
+    font-family:"Didact Gothic";
 }
 
 .row-4 .text-from-sheet {
@@ -201,10 +212,11 @@ img[data-row="6"][data-img="0"] {
     display: flex;
     color:white;
     z-index:2;
-    transform: translateY(409%);
+    transform: translateY(352%);
     margin-left:285px;
     width:120px;
     text-align:center;
+    font-family:"Didact Gothic";
 }
 
 .row-6 .text-from-sheet {
@@ -212,10 +224,11 @@ img[data-row="6"][data-img="0"] {
     display: flex;
     color:white;
     z-index:2;
-    transform: translateY(-380%);
+    transform: translateY(-350%);
     margin-left:540px;
     width:120px;
     text-align:center;
+    font-family:"Didact Gothic";
 }
 
 
@@ -233,6 +246,7 @@ img[data-row="6"][data-img="0"] {
     z-index: 2; /* Text stays above the box */
      /* Vertically center text */
     transform: translateY(-50%); /* Adjust text positioning */
+    font-family:"Gowun Dodum";
 }
 
 .row-1 .text-from-sheet {
@@ -245,6 +259,7 @@ img[data-row="6"][data-img="0"] {
     margin-bottom:400px;
     z-index:2;
     transform: translateY(-250%);
+    font-family:"Didact Gothic";
 }
 
 .event-title p {
@@ -255,9 +270,20 @@ img[data-row="6"][data-img="0"] {
     left:40%;
     z-index: 3;
     justify-content: center;
-    transform: translateY(900%);
+    transform: translateY(700%);
+    font-family:"Gowun Dodum";
     
 
+}
+/************THINGS THAT AREN"T ON THE WEBSITE*********************/
+.row-9 .text-from-sheet {
+    display:none;
+}
+.row-10 .text-from-sheet {
+    display:none;
+}
+.row-11 .text-from-sheet {
+    display:none;
 }
 
 /***************Instagram Link*************************/
@@ -271,15 +297,21 @@ img[data-row="6"][data-img="0"] {
 }
 h2{
     font-size:40px;
+    font-family:"Gowun Dodum";
 }
+
 
 .instagram-logo{
     border-radius:50%;
     height:120px;
 }
 
-.instagram-logo:hover{
+.insta a:hover{
     opacity:0.7;
+}
+.insta p{
+    color:black;
+    font-family:"Didact Gothic";
 }
 
 /*************** Images ******************************/
@@ -297,14 +329,16 @@ h2{
 .group-images img{
     padding:1px;
     height:200px;
-    width:auto;
+    width:300px;
     border-radius:15px;
 }
 
 /*************** Footer ******************************/
 footer {
     position: relative;
+    justify-content:end;
     width: 100%;
+    font-family:"Didact Gothic";
 }
 
 .bottom-line {
@@ -333,11 +367,14 @@ footer p{
     margin:0 auto;
     text-align:center;
     transform: translateY(-150%);
-    background-color: #7c9c92;
+    background-color: #456359;
     padding:10px;
     width:200px;
     border-radius:30px;
     
+}
+#button:hover {
+    background-color:#4c6d62;
 }
 
 a {
@@ -348,7 +385,7 @@ a {
     position:relative;
     z-index: 1;
     border: none;
-    border-top: 4px solid #7c9c92; /* Line color and thickness */
+    border-top: 4px solid #456359; /* Line color and thickness */
     margin: 20px auto; /* Center the line */
     width: 80%; /* Adjust the width */
     transform: translateY(-1000%);
